@@ -52,7 +52,7 @@ function addone(num){
 
 
 
-addTwo(5)
+addTwo(5)//it will give an error coz we're storing it in a variable which is in this context called a expression
 const addTwo = function(num){
     return num + 2
 }
