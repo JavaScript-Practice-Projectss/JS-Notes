@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayHitesh = function(){
+        console.log("Hitesh");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+    //js is syncronous and single threaded mtlb pehly ek code then 2sra then 3sra(default js behaviour)
+    //one line by one code execute hota ha ..each operation waits for last one to complete execution
+    //blocking code vs non blocking code
+    //blocking code:block the floe of program(read file sync)//kernel file read example
+    //non blocking:do not block(read file asyn)//use case ek:db mn data store krny sy pehly successful ka msg
+</script>
+</html>
