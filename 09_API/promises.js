@@ -93,7 +93,9 @@ consumePromiseFive()
 // }
 
 //getAllUsers()
-
+//fetch is a global method which starts the process of fetching a resource from network it retuens a promise
+//sirf us case mn error ata ha jb wo request ni kr pata agr error 404 a jata ha to wo response hoga
+//fetch('https://api.github.com/users/hiteshchoudhary',{headers})..you can send anything with it    
 fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
     return response.json()
