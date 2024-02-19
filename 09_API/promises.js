@@ -10,7 +10,7 @@ const promiseOne = new Promise(function(resolve, reject){
         resolve()
     }, 1000)
 })
-//promise consumption..  .then ka direct connection ha ap k resolve k sth is k andr b ek callback milta ha ye automatically ap ko ek argument retuen krta ha ...jo b value ya kam promise mn huwa ha wo return hota ha  ...agr ap resolve() call ni krty promise mn to ap kapromise or .then connect hi ni hoty you've to connect'em
+//promise consumption..  .then ka direct connection ha ap k resolve k sth is k andr b ek callback milta ha ye automatically ap ko ek argument return krta ha ...jo b value ya kam promise mn huwa ha wo return hota ha  ...agr ap resolve() call ni krty promise mn to ap ka promise or .then connect hi ni hoty you've to connect'em
 promiseOne.then(function(){
     console.log("Promise consumed");
 })
