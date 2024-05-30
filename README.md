@@ -1,2 +1,1 @@
-# JavaScript-Practice
-JavaScript Practice 
+## JavaScript-Notes and Practice
